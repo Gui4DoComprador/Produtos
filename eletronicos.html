@@ -1,178 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eletrônicos - Guia do Comprador</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --cor-principal: #004aad;
-      --cor-secundaria: #003b88;
-      --cor-destaque: #ffcc00;
-      --fundo: #f5f6fa;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background-color: var(--fundo);
-    }
-
-    header {
-      background: linear-gradient(135deg, #004aad, #007bff);
-      color: white;
-      text-align: center;
-      padding: 3rem 1rem 2rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      position: relative;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      margin-top: 0.5rem;
-      opacity: 0.9;
-    }
-
-    nav {
-      background-color: #fff;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    nav a {
-      color: var(--cor-principal);
-      font-weight: 600;
-      text-decoration: none;
-      padding-bottom: 4px;
-      border-bottom: 3px solid transparent;
-      transition: 0.3s;
-      font-size: 1rem;
-    }
-
-    nav a:hover {
-      color: var(--cor-secundaria);
-      border-color: var(--cor-destaque);
-    }
-
-    nav a.ativo {
-      color: var(--cor-secundaria);
-      border-color: var(--cor-destaque);
-      font-size: 1.1rem;
-      font-weight: 700;
-    }
-
-    .produtos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.8rem;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: 2rem auto;
-    }
-
-    .produto {
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      padding: 1rem;
-      transition: transform 0.3s, box-shadow 0.3s;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .produto:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .produto img {
-      width: 100%;
-      height: 220px;
-      /* altura padrão visualmente agradável */
-      object-fit: contain;
-      /* mostra a imagem inteira sem cortar */
-      background-color: #f8f8f8;
-      /* fundo neutro para imagens menores */
-      border-radius: 10px;
-      margin-bottom: 0.8rem;
-    }
-
-    .produto h3 {
-      font-size: 1rem;
-      margin: 0.8rem 0;
-      color: #333;
-    }
-
-    .produto a {
-      display: inline-block;
-      background-color: var(--cor-principal);
-      color: #fff;
-      text-decoration: none;
-      padding: 0.6rem 1rem;
-      border-radius: 8px;
-      font-weight: 500;
-      transition: background 0.3s;
-    }
-
-    .produto a:hover {
-      background-color: var(--cor-secundaria);
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <h1>Eletrônicos</h1>
-  </header>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="eletronicos.html" class="ativo">Eletrônicos</a>
-    <a href="beleza.html">Beleza</a>
-    <a href="utilidades.html">Utilidades</a>
-  </nav>
+<header>
+  <h1>Eletrônicos</h1>
+</header>
 
-  <div class="produtos">
+<nav>
+  <a href="index.html">Início</a>
+  <a href="eletronicos.html" class="ativo">Eletrônicos</a>
+  <a href="beleza.html">Beleza</a>
+  <a href="utilidades.html">Utilidades</a>
+</nav>
 
-    <div class="produto">
-      <img src="FoneLenovo.jpg" alt="Produto">
-      <h3>Lenovo GM2 Pro Gaming</h3>
-      <a href="https://s.click.aliexpress.com/e/_c4oMi2rZ">Ver na Loja</a>
-    </div>
+<div class="produtos">
 
-    <div class="produto">
-      <img src="AttackSharkX11.webp" alt="Produto">
-      <h3>Attack Shark X11</h3>
-      <a href="https://s.click.aliexpress.com/e/_c2y6SQEt">Ver na Loja</a>
-    </div>
-
-    <!--
-    BASE
-    <div class="produto">
-      <img src="link-imagem.jpg" alt="Produto">
-      <h3>Fone Bluetooth XYZ</h3>
-      <a href="link-afiliado">Ver na Loja</a>
-    </div>
-    -->
+  <div class="produto">
+    <img src="FoneLenovo.jpg" alt="Lenovo GM2 Pro">
+    <h3>Lenovo GM2 Pro Gaming</h3>
+    <a href="https://s.click.aliexpress.com/e/_c4oMi2rZ">Comprar Agora</a>
   </div>
-</body>
 
+  <div class="produto">
+    <img src="AttackSharkX11.webp" alt="Attack Shark X11">
+    <h3>Attack Shark X11</h3>
+    <a href="https://s.click.aliexpress.com/e/_c2y6SQEt">Comprar Agora</a>
+  </div>
+
+  <!-- Adicione os outros que você já tinha aqui, se quiser -->
+  <!-- Eu deixei só os 2 que você mandou explicitamente -->
+
+</div>
+
+</body>
 </html>
